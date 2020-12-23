@@ -1,0 +1,249 @@
+.projects {
+  display: block;
+  height: 115vh;
+  width: 100%;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.projects h1 {
+  position: relative;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-5%, -5%);
+  font-weight: 700;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  justify-content: space-around;
+  margin: auto auto;
+  top: 5%;
+}
+
+.projectbox {
+  display: flex;
+  padding: 45px 35px;
+  height: 400px;
+  width: 400px;
+  border-radius: 25px;
+  margin: 0 100px;
+  background: rgb(228, 225, 240);
+  box-shadow: 10px 10px 60px rgb(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+  position: relative;
+  justify-content: center;
+}
+
+.projectbox:hover {
+  top: -3%;
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(225deg, #1c2e75, #90074c);
+}
+
+.cardBox1 {
+  padding: 25px 35px;
+}
+
+.projectbox:hover .cardBox1 {
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.4s ease-in-out;
+}
+
+.projectbox:hover .cardBox1 p {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.projectbox h2 {
+  font-size: 2.7rem;
+  margin-bottom: 10%;
+}
+
+.projectbox p {
+  color: rgb(58, 58, 58);
+  margin-bottom: 8%;
+}
+
+.projectbox .btn1 {
+  border: 2px solid rgb(42, 5, 85);
+  position: relative;
+  bottom: -20%;
+  left: 0;
+  background: inherit;
+  display: flex;
+  width: 55%;
+  height: 15%;
+  font-size: 1.1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectbox .btn1 a {
+  color: black;
+  text-decoration: none;
+}
+
+.projectbox .btn1:hover a {
+  color: white;
+}
+
+.projectbox .btn1:hover {
+  background: rgb(65, 26, 172);
+  cursor: pointer;
+}
+
+.cardBox1content {
+  position: absolute;
+  display: flex;
+  background: #131e42;
+  left: 32%;
+  top: 10%;
+  height: 240px;
+  width: 600px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 100px;
+  transition: all 0.5s ease;
+  transform: translateX(100px);
+  transform-origin: right;
+  opacity: 0;
+}
+
+.projectbox:hover .cardBox1content {
+  transform-origin: left;
+  opacity: 1;
+  transform: translateX(270px);
+  transition: all 0.7s ease-in-out;
+}
+
+.projectbox:hover .cardBox1content p {
+  transition: all 1.5s ease;
+  opacity: 1;
+}
+
+.cardBox1content p {
+  font-family: "Lato", sans-serif;
+  font-size: large;
+  color: rgb(209, 6, 23);
+  opacity: 0;
+}
+
+.projectbox2 {
+  display: flex;
+  padding: 45px 35px;
+  height: 400px;
+  width: 400px;
+  border-radius: 25px;
+  background: rgb(228, 225, 240);
+  margin: 0 10%;
+  margin-left: auto;
+  box-shadow: 10px 10px 60px rgb(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.projectbox2:hover {
+  top: -3%;
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(225deg, #90074c, #1c2e75);
+}
+
+.cardBox1 {
+  padding: 25px 35px;
+}
+
+.projectbox2:hover .cardBox2 {
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.4s ease-in-out;
+}
+
+.projectbox2:hover .cardBox2 p {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.cardBox2content {
+  position: absolute;
+  display: flex;
+  background: #131e42;
+  right: 82%;
+  top: 20%;
+  height: 240px;
+  width: 600px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 25px;
+  transition: all 0.5s ease;
+  transform: translateX(90px);
+  transform-origin: left;
+  opacity: 0;
+}
+
+.projectbox2:hover .cardBox2content {
+  transform-origin: right;
+  opacity: 1;
+  transform: translateX(-46px);
+  transition: all 0.7s ease-in-out;
+}
+
+.projectbox2:hover .cardBox2content p {
+  transition: all 1.5s ease;
+  opacity: 1;
+}
+
+.cardBox2content p {
+  font-family: "Lato", sans-serif;
+  font-size: large;
+  color: rgb(209, 6, 23) !important;
+  opacity: 0;
+}
+
+.projectbox2 h2 {
+  font-size: 2.7rem;
+  margin-bottom: 10%;
+}
+
+.projectbox2 p {
+  color: rgb(58, 58, 58);
+  margin-bottom: 8%;
+}
+
+.projectbox2 .btn2 {
+  border: 2px solid rgb(42, 5, 85);
+  position: relative;
+  bottom: -20%;
+  left: 35%;
+  background: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 15%;
+  font-size: 1.1rem;
+}
+
+.projectbox2 .btn2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.projectbox2 .btn2:hover a {
+  color: white;
+}
+
+.projectbox2 .btn2:hover {
+  background: rgb(65, 26, 172);
+  cursor: pointer;
+}
+
+/* background: #f4f5f6; */

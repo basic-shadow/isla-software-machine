@@ -1,0 +1,162 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 100%;
+  position: relative;
+  background: #f5f5f5;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.contact h1 {
+  position: relative;
+  top: 5%;
+  left: 50%;
+  transform: translate(-5%, -5%);
+}
+
+.contact .hr {
+  width: 70%;
+  height: 3px;
+  background: linear-gradient(
+    150deg,
+    rgb(6, 135, 241),
+    rgb(22, 22, 64),
+    rgb(6, 135, 241)
+  );
+  position: relative;
+  top: 6%;
+  left: 15%;
+}
+
+.contactBox {
+  display: grid;
+  position: relative;
+  grid-template-rows: repear(4, minmax(80px, 80px));
+  width: 70%;
+  height: 60%;
+  margin: auto;
+}
+
+.contactBox input {
+  font-family: "Roboto", sans-serif;
+  width: 50%;
+  border: none;
+  display: inline-block;
+  padding: 14px;
+  font-size: 1.2rem;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px 0 rgba(123, 124, 122, 0.22),
+    0 13px 12px -11px rgba(180, 181, 176, 0.32);
+}
+
+.contactBox input:nth-child(1) {
+  grid-row: 1;
+  height: 65px;
+}
+.contactBox input:nth-child(3) {
+  grid-row: 2;
+  height: 65px;
+}
+
+#enterMessage {
+  grid-row: 3;
+  border: none;
+  display: inline-block;
+  padding: 14px;
+  height: 120px;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px 0 rgba(123, 124, 122, 0.22),
+    0 13px 12px -11px rgba(180, 181, 176, 0.32);
+  width: 50%;
+  resize: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.contactBox button {
+  grid-row: 4;
+  width: 25%;
+  height: 50px;
+  font-weight: 200;
+  font-size: 20px;
+  border-radius: 5px;
+  background: #0059b9;
+  border: 2px solid rgb(18, 25, 119);
+  color: white;
+  cursor: pointer;
+  margin: auto;
+}
+
+.contactBox button:hover {
+  background: rgb(222, 222, 222);
+}
+
+.contactBox button:hover i {
+  color: rgb(6, 135, 241);
+}
+
+.labelName {
+  position: absolute;
+  left: 46%;
+  transition: all 0.3s ease;
+  transform: translateY(-40%);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(22, 22, 64);
+}
+
+#enterName:placeholder-shown + .labelName {
+  opacity: 0;
+  transform: translateY(80%);
+}
+
+#enterName:hover {
+  border: 2px solid salmon;
+  box-shadow: 10px 10px 55px rgba(68, 102, 102, 0.4);
+}
+
+#enterEmail:hover {
+  border: 2px solid salmon;
+  box-shadow: 10px 10px 55px rgba(68, 102, 102, 0.4);
+}
+
+#enterMessage:hover {
+  border: 2px solid salmon;
+  box-shadow: 10px 10px 55px rgba(68, 102, 102, 0.4);
+}
+
+.labelEmail {
+  position: absolute;
+  left: 46%;
+  transition: all 0.3s ease;
+  transform: translateY(-60%);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(22, 22, 64);
+  top: 25%;
+}
+
+#enterEmail:placeholder-shown + .labelEmail {
+  opacity: 0;
+  transform: translateY(80%);
+}
+
+.labelMessage {
+  position: absolute;
+  left: 45%;
+  transition: all 0.3s ease;
+  transform: translateY(-100%);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(22, 22, 64);
+  top: 50%;
+}
+
+#enterMessage:placeholder-shown + .labelMessage {
+  opacity: 0;
+  transform: translateY(80%);
+}
