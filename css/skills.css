@@ -13,10 +13,7 @@
   position: relative;
   left: 50%;
   top: 0;
-  background: -webkit-linear-gradient(rgb(224, 210, 210), rgb(148, 1, 1));
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(199, 199, 199);
   transform: translate(-4%, -200%);
 }
 
@@ -24,7 +21,6 @@
   display: grid;
   width: 100%;
   grid-template-columns: 10% 40% 40% 10%;
-  grid-template-rows: minmax(300px, 400px);
   position: relative;
   transform: translateY(-20%);
 }
@@ -32,9 +28,7 @@
 .langs {
   display: flex;
   grid-column: 2;
-  grid-row: 1;
   justify-content: space-between;
-  padding-bottom: 40%;
   height: 100%;
   flex-direction: column;
 }
@@ -89,10 +83,8 @@
 .tools {
   display: flex;
   grid-column: 3;
-  grid-row: 1;
   flex-direction: column;
   justify-self: center;
-  align-items: inherit;
 }
 
 .tools h2 {
@@ -128,4 +120,63 @@
 
 .tools div:nth-child(4) .lines::after {
   width: 220px;
+}
+
+.bottomsvg {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+}
+
+@media screen and (max-width: 1400px) {
+  .skills {
+    margin-top: 60px;
+  }
+  .bottomsvg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bottomsvg {
+    display: none;
+  }
+  .skillscontent {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .skillscontent h1 {
+    left: 45%;
+    color: rgb(27, 0, 100);
+  }
+
+  .skillsbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skillsbox .langs {
+    position: relative;
+    margin: 100px 50px;
+  }
+
+  .skillsbox .tools {
+    position: relative;
+    margin: 0 50px;
+  }
+
+  .skills .tools * {
+    margin-top: 8px;
+    padding: 0;
+  }
+
+  .skills .tools .lines {
+    position: relative;
+    left: 40%;
+    transform: translateY(-27px);
+  }
 }

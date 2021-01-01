@@ -17,12 +17,29 @@
 <body>
     <div class="home">
         <section class="headers">
-            <nav>
-                <a href="/">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+            <div class="navmenu">
+                <div class="navlines"></div>
+                <div class="navlines"></div>
+                <div class="navlines"></div>
+            </div>
+            <nav class="navbar">
+                <ul class="navlinks">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
             </nav>
             <div class="logo">
                 isla
@@ -60,13 +77,12 @@
     <div id="about" class="about">
         <div class="header1">
             <h1>About</h1>
-            <h1 style="color: #0038FF">me</h1>
+            <h1 style="color: #0038FF; margin-left: 10px">me</h1>
         </div>
-        <div class="line" style="position: relative; left: 50.5%; width: 3.5%; transform: translateY(-100%);
-        border-bottom: 4px solid #8EB5FF;"></div>
+        <div class="meline" ></div>
         <div class="about-box">
             <h2>They call me isla</h2>
-            <div class="line" style="position: relative; left: 58.4%; top: 115%"></div>
+            <div class="secline" ></div>
             <p>Hi, I am 2nd Year Computer Science Student at Nazarbayev University. My current goal is to become Software Engineer. My hobbies are sport, biking, and programming from now on. Some information...
             </p>
             <button>DOWNLOAD CV</button>
@@ -122,12 +138,13 @@
                 </div>
             </div>
         </div>
-        <div style="position: absolute; bottom: 15%; left: 0; width: 100%; height: 20vh;">
+        <div class="bottomsvg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L120,192C240,192,480,192,720,170.7C960,149,1200,107,1320,85.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
         </div>
     </div>
     <div id="projects" class="projects">
         <h1>Projects</h1>
+        <img src="work.svg" alt="work"/>
         <div class="container">
             <div class="projectbox">
                 <div class="cardBox1">
@@ -195,5 +212,7 @@
             <p>2020 All rights reserved. Designed by isla.</p>
         </div>
     </div>
+
+    <script src="app.js" ></script>
 </body>
 </html>

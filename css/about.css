@@ -1,6 +1,6 @@
 .about {
   display: block;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 80vh;
   width: 100%;
 }
@@ -56,4 +56,64 @@
   object-fit: cover;
   grid-column: 4;
   width: 100%;
+}
+
+.secline {
+  position: absolute;
+  width: 80px;
+  border-bottom: 4px solid;
+  left: 20%;
+  top: 126%;
+}
+
+.meline {
+  position: absolute;
+  left: 50.5%;
+  width: 65px;
+  transform: translateY(-100%);
+  border-bottom: 4px solid #8eb5ff;
+}
+
+@media screen and (max-width: 1500px) {
+  .about-box .secline {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-box .secline {
+    visibility: visible;
+    left: 0;
+    top: 115%;
+    width: 80px;
+  }
+
+  .about-box > * {
+    margin: 10px 50px;
+    padding: 0;
+  }
+
+  .about-box p {
+    margin-bottom: 30px;
+  }
+
+  .about-box button {
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .about-box img {
+    width: 85%;
+    margin-top: 50px;
+  }
+
+  .meline {
+    left: 60%;
+    width: 60px;
+  }
 }
