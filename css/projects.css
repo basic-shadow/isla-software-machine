@@ -115,10 +115,9 @@
   background: #131e42;
   left: 32%;
   top: 10%;
-  width: 600px;
-  flex-direction: column;
-  justify-content: center;
-  padding: 15px 100px;
+  width: 800px;
+  text-align: center;
+  padding: 50px 30px;
   transition: all 0.5s ease;
   transform: translateX(100px);
   transform-origin: right;
@@ -140,8 +139,17 @@
 .cardBox1content p {
   font-family: "Lato", sans-serif;
   font-size: large;
-  color: rgb(209, 6, 23);
+  margin: auto;
+  height: 80px;
+  color: rgb(238, 221, 222) !important;
   opacity: 0;
+}
+
+.cardBox1content h5 {
+  font-family: "Lato", sans-serif;
+  font-size: large;
+  color: rgb(209, 6, 23) !important;
+  opacity: 1;
 }
 
 .projectbox2 {
@@ -183,14 +191,12 @@
 .cardBox2content {
   position: absolute;
   display: flex;
+  text-align: center;
   background: #131e42;
   right: 82%;
   top: 20%;
-  height: 240px;
-  width: 600px;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px 25px;
+  width: 800px;
+  padding: 50px 30px;
   transition: all 0.5s ease;
   transform: translateX(90px);
   transform-origin: left;
@@ -212,8 +218,17 @@
 .cardBox2content p {
   font-family: "Lato", sans-serif;
   font-size: large;
-  color: rgb(209, 6, 23) !important;
+  margin: auto;
+  height: 80px;
+  color: rgb(238, 221, 222) !important;
   opacity: 0;
+}
+
+.cardBox2content h5 {
+  font-family: "Lato", sans-serif;
+  font-size: large;
+  color: rgb(209, 6, 23) !important;
+  opacity: 1;
 }
 
 .projectbox2 h2 {
