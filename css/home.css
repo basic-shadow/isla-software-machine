@@ -96,12 +96,13 @@ body {
 }
 
 .greetings {
-  display: block;
+  display: inline-block;
   height: 25%;
   width: 40%;
-  position: relative;
+  position: absolute;
   color: white;
-  top: 15%;
+  left: 60%;
+  top: 30%;
   margin-left: auto;
   font-size: 1.3rem;
 }
