@@ -17,8 +17,9 @@
 .about-box {
   display: grid;
   grid-template-columns: 20% 35% 10% 25% 10%;
-  grid-template-rows: 7% 60% 23% 10%;
+  grid-template-rows: 10% 30% 20% 40%;
   width: 100%;
+  height: 100%;
   margin-top: 4%;
 }
 
@@ -37,8 +38,8 @@
   grid-row: 3;
   grid-column: 2;
   width: 45%;
-  font-size: 1.2rem;
   height: 25%;
+  font-size: 1.2rem;
   background: rgb(20, 89, 238);
   border: none;
   color: white;
@@ -53,9 +54,11 @@
 }
 
 .about-box img {
-  object-fit: cover;
-  grid-column: 4;
-  width: 100%;
+  position: absolute;
+  right: 4%;
+  width: 40%;
+  object-fit: scale-down;
+  height: 60%;
 }
 
 .secline {
