@@ -13,27 +13,27 @@ const t1 = new TimelineMax();
 
 setTimeout(() => {
   document.getElementById("portfolio").style.overflow = "auto";
-}, 100);
+}, 1000);
 
 textOnSlider.forEach((l, index) => {
     if (index % 2 == 0) {
         t1.fromTo(
         l,
-        0.0,
+        0.7,
         { opacity: 0, y: -80 },
         { opacity: 1, y: 0, ease: Power2.easeInOut }
-        ).to(l, 0, { x: -80, opacity: 0, ease: Power2.easeInOut });
+        ).to(l, 1, { x: -80, opacity: 0, ease: Power2.easeInOut });
     } else {
         t1.fromTo(
         l,
-        0.0,
+        0.7,
         { opacity: 0, y: -80 },
         { opacity: 1, y: 0, ease: Power2.easeInOut }
-        ).to(l, 0, { x: 100, opacity: 0, ease: Power2.easeInOut });
+        ).to(l, 1, { x: 100, opacity: 0, ease: Power2.easeInOut });
     }
 });
     
-t1.to(slider, 0, { y: "-100%", ease: Power2.easeInOut });
+t1.to(slider, 1, { y: "-100%", ease: Power2.easeInOut });
 links.forEach((l) =>
     t1.fromTo(l, 1.2,
         { opacity: 0, x: 80 },
@@ -57,14 +57,14 @@ verticalName.forEach((l, index) => {
       l,
       0.2,
       { opacity: 0, x: 200 },
-      { opacity: 1, x: 0, ease: SlowMo.easeInOut }
+      { opacity: 1, x: 0, ease: SlowMo.easeInOut },
     );
   } else {
     t1.fromTo(
       l,
       0.2,
       { opacity: 0, x: -200 },
-      { opacity: 1, x: 0, ease: SlowMo.easeInOut }
+      { opacity: 1, x: 0, ease: SlowMo.easeInOut },
     );
   }
 });

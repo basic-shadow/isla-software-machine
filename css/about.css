@@ -60,6 +60,13 @@
   object-fit: scale-down;
   height: 60%;
 }
+.about-boxBottom a {
+  text-decoration: none;
+  color: white;
+}
+.about-boxBottom:hover a {
+  color: rgb(22, 22, 88);
+}
 
 .secline {
   position: absolute;
