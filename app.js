@@ -105,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     ScrollTrigger.create({
       trigger: '.about',
-      markers: true,
       start: '100px 80%',
       onEnter: function() {animateFrom(child)},
       onEnterBack: function() { animateFrom(child, -1) },
