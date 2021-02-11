@@ -53,6 +53,11 @@ body {
   display: flex;
 }
 
+.parallax {
+  position: relative;
+  top: -60%;
+}
+
 .logo {
   position: absolute;
   top: 6%;
