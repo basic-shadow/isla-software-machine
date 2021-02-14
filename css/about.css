@@ -56,10 +56,10 @@
 .about-box img {
   position: absolute;
   right: 4%;
-  width: 40%;
-  object-fit: scale-down;
-  clip-path: circle(40%);
-  height: 60%;
+  width: 35%;
+  object-fit: contain;
+  height: 90vh;
+  clip-path: ellipse(30% 30% at 50% 33%);
 }
 .about-boxBottom a {
   text-decoration: none;
@@ -74,7 +74,7 @@
   width: 80px;
   border-bottom: 4px solid;
   left: 20%;
-  top: 126%;
+  top: 146.5%;
 }
 
 .meline {

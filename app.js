@@ -33,7 +33,7 @@ textOnSlider.forEach((l, index) => {
     }
 });
     
-t1.to(slider, 1, { y: "-100%", ease: Power2.easeInOut });
+t1.to(slider, 1, { y: "-110%", ease: Power2.easeInOut });
 links.forEach((l) =>
     t1.fromTo(l, 1.2,
         { opacity: 0, x: 80 },

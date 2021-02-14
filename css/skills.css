@@ -242,4 +242,13 @@
     left: 40%;
     transform: translateY(-27px);
   }
+
+  .langs {
+    left: 25%;
+  }
+
+  .skillsTitle {
+    margin-top: 17%;
+    margin-left: -9%;
+  }
 }
