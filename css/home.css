@@ -48,7 +48,7 @@ body {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url("../BG.jpg");
+  background-image: url("../images/BG.jpg");
 }
 
 .home .bgBlack {
@@ -176,8 +176,8 @@ body {
   }
 
   .greetings {
-    top: 25%;
-    left: 28%;
+    top: 17rem;
+    left: 3rem;
   }
 
   .navmenu {
@@ -194,27 +194,26 @@ body {
 
   .navbar {
     position: absolute;
-    top: 0;
     right: 0;
     width: 50%;
     z-index: 10;
     background: #23242f;
     box-shadow: 16px 2px 35px 1px black;
-    height: 100vh;
-    transform: translateX(120%);
-    transition: all 0.5s ease-in-out;
+    height: 120vh;
+    transform: translate(120%, -15%);
+    transition: all 0.5s ease-out;
   }
 
   .navbar.open {
-    transform: translateX(20%);
+    transform: translate(20%, -15%);
   }
 
   .navlinks {
     height: 50%;
     position: absolute;
     display: flex;
-    left: 0;
-    top: 10%;
+    left: -1rem;
+    top: 12rem;
     flex-direction: column;
   }
 
@@ -226,8 +225,18 @@ body {
     transition: all 0.5s ease-in-out 0.5s;
   }
 
+  .helloworld {
+    top: 3rem;
+    left: 0;
+  }
+
   .navlinks li.fade {
     opacity: 1;
+  }
+
+  .line {
+    position: absolute;
+    left: -10rem;
   }
 
   .navlines {

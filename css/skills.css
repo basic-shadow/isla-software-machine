@@ -1,7 +1,7 @@
 .skills {
   display: block;
-  height: 110vh;
   background: #131e42;
+  padding-bottom: 2rem;
   color: white;
   overflow: hidden;
   position: relative;
