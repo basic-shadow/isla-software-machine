@@ -71,6 +71,7 @@
 }
 .contactBox input:nth-child(3) {
   grid-row: 2;
+
   height: 65px;
 }
 
@@ -97,7 +98,6 @@
   border-radius: 4px;
   box-shadow: 0 2px 6px 0 rgba(123, 124, 122, 0.22),
     0 13px 12px -11px rgba(180, 181, 176, 0.32);
-  width: 700px;
   resize: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
@@ -194,8 +194,8 @@
   }
   .contactBox input,
   #enterMessage {
-    margin: 20px auto;
-    width: 500px;
+    margin: 20px 0;
+    width: 100%;
   }
 
   .contact h1 {
